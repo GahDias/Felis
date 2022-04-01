@@ -1,0 +1,253 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.clear{
+    clear: both;
+}
+
+html,body{
+	height: 100%;
+}
+
+.container{
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+@font-face {
+    font-family: 'Selna';
+    src: url('./fonts/selna-7440006/Selna\ Regular.ttf');
+}
+
+/* HEADER */
+/*menu 1*/
+header nav.menu1{
+    float: left;
+}
+
+header nav.menu1 ul{
+    list-style-type: none;
+    padding-top: 39px;
+    padding-left: 67px;
+}
+
+header nav.menu1 ul li{
+    float: right;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+}
+
+header nav.menu1 a{
+    text-decoration: none;
+    color: #1D1B19;
+}
+
+/*logo*/
+header .container .logo{
+    padding-top: 25px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+}
+
+header .container .logo h2{
+    font-size: 52px;
+    font-family: 'Selna';
+    text-transform: uppercase;
+    font-weight: 400;
+    line-height: 90px;
+    color: #1D1B19;
+    margin: 0 auto;
+}
+
+/*menu 2*/
+header nav.menu2{
+    float: right;
+}
+
+header nav.menu2 ul{
+    list-style-type: none;
+    padding-top: 39px;
+    padding-right: 67px;
+}
+
+header nav.menu2 ul li{
+    float: left;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding: 0 20px;
+}
+
+header nav.menu2 a{
+    text-decoration: none;
+    color: #1D1B19;
+}
+
+/* CONTEUDO */
+/*img*/
+header .conteudo .img-conteudo{
+    width: 50%;
+    max-height: 800px;
+    float: left;
+}
+
+header .conteudo .img-conteudo img{
+    width: 100%;
+    height: auto;
+}
+
+/*text*/
+header .conteudo-wraper{
+    float: right;
+    width: 50%;
+    max-height: 800px;
+    text-align: center;
+    padding-top: 20%;
+    text-transform: uppercase;
+    height: 100%;
+    min-height: 750px;
+}
+
+header .conteudo-wraper img{
+    width: 48px;
+    height: 48px;
+    margin-bottom: 26px;
+}
+
+header .conteudo-wraper .texto-conteudo h2{
+    font-family: 'Selna';
+    font-size: 62px;
+    font-weight: 400;
+    line-height: 80px;
+    color: #1D1B19;
+}
+
+header .conteudo-wraper .texto-conteudo p{
+    font-family: 'Helvetica';
+    text-decoration: underline;
+    margin: 0 auto;
+    /*max-width: 100px;*/
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+    margin-top: 38px;
+    color: #1D1B19;
+    /*border-bottom: 1px solid #1D1B19;*/
+    cursor: pointer;
+}
+
+/*loja*/
+section.chamada .titulo-chamada{
+    width: 100%;
+    padding-left: 66px;
+    padding-right: 64px;
+    text-transform: uppercase;
+}
+
+section.chamada .titulo-chamada h2{
+    float: left;
+    font-family: 'Selna';
+    font-size: 50px;
+    padding-top: 144px;
+    font-weight: 400;
+    line-height: 85px;
+    color: #1D1B19;
+}
+
+section.chamada .titulo-chamada p{
+    float: right;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    padding-top: 167px;
+    font-weight: 400;
+    line-height: 23px;
+}
+
+section.chamada .titulo-chamada a{
+    color: #1D1B19;
+}
+
+/* ITENS */
+
+section.itens-1 .itens-wraper{
+    width: 30%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+section.itens-1 .itens-wraper h2{
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 25px;
+    color: #1D1B19;
+}
+
+section.itens-1 .itens-wraper p{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 23px;
+    color: rgba(29, 27, 25, 0.72);
+}
+
+section.itens-1 .itens-wraper img{
+    width: 100%;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+#item1{
+    float: left;
+    margin-top: 71px;
+    margin-left: 67px;
+}
+
+#item2{
+    float: right;
+    margin-top: 71px;
+    margin-right: 67px;
+}
+
+#item3{
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+/* CHAMADA */
+section.chamada2 img{
+    width: 100%;
+    position: relative;
+}
+
+#colar1{
+    margin-top: 142px;
+    margin-left: 66px;
+    width: 20%;
+}
+
+#colar2{
+    float: right;
+    top: -1000px;
+    margin-left: 111px;
+    margin-right: 66px;
+    width: 20%;
+}
+
+section.chamada2 .texto{
+    text-align: center;
+    position: relative;
+    top: -300px;
+}
+
+section.chamada2 .texto h2{
+    font-family: 'Selna';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 56.377px;
+    line-height: 96px;
+}
