@@ -31,11 +31,33 @@ header{
     padding: 20px 2%;
 }
 
-/*menu 1*/
-header nav.menu1{
+
+/*search*/
+.top .search{
     float: left;
+    position: relative;
 }
 
+.top .search img{
+    height: 15px;
+    width: auto;
+    padding-right: 15px;
+    cursor: pointer;
+}
+
+.top .search input[type=text]{
+    background-color: rgb(207, 175, 159);
+    outline: none;
+    border: none;
+    border-bottom: 1px solid rgb(194, 153, 132);
+    padding: 2px 5px;
+}
+
+input[type=text]::placeholder{
+    color: rgb(167, 120, 96);
+}
+
+/*menu 1*/
 header nav.menu1 ul{
     list-style-type: none;
     padding: 18px 0px;
@@ -54,12 +76,9 @@ header nav.menu1 a{
 }
 
 /*logo*/
-header .container .logo{
-    text-align: center;
-}
-
 header .container .logo h2{
     font-size: 52px;
+    padding: 0 50px;
     font-family: 'Selna';
     font-weight: 400;
     color: #1D1B19;
@@ -67,10 +86,6 @@ header .container .logo h2{
 }
 
 /*menu 2*/
-header nav.menu2{
-    float: right;
-}
-
 header nav.menu2 ul{
     list-style-type: none;
     padding: 18PX 0PX;
@@ -88,12 +103,20 @@ header nav.menu2 a{
     color: #1D1B19;
 }
 
+.top{
+   height: 25vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   background-color: rgba(194, 153, 132, 0.781);
+}
+
 /* CONTEUDO */
 .conteudo{
     height: 700px;
     display: flex;
     align-items: center;
-    margin-top: 20px;
+    padding-top: 40px;
 }
 /*img*/
 header .conteudo .img-conteudo{
@@ -101,6 +124,7 @@ header .conteudo .img-conteudo{
     max-height: 800px;
     float: left;
     padding: 0 2%;
+    margin-top: -20px;
 }
 
 header .conteudo .img-conteudo img{
@@ -134,25 +158,24 @@ main{
     padding: 0 4%;
 }
 
+section.chamada{
+    padding-top: 90px;
+}
+
 .container-itens1{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 section.chamada .titulo-chamada{
     width: 100%;
-    padding-left: 66px;
-    padding-right: 64px;
-    text-transform: uppercase;
 }
 
 section.chamada .titulo-chamada h2{
     float: left;
     font-family: 'Selna';
     font-size: 50px;
-    padding-top: 144px;
     font-weight: 400;
-    line-height: 85px;
     color: #1D1B19;
 }
 
@@ -160,9 +183,8 @@ section.chamada .titulo-chamada p{
     float: right;
     font-family: Arial, Helvetica, sans-serif;
     font-size: 20px;
-    padding-top: 167px;
     font-weight: 400;
-    line-height: 23px;
+    padding-top: 25px;
 }
 
 section.chamada .titulo-chamada a{
@@ -179,14 +201,12 @@ section.itens-1 .itens-wraper{
 section.itens-1 .itens-wraper h2{
     font-size: 22px;
     font-weight: 400;
-    line-height: 25px;
     color: #1D1B19;
 }
 
 section.itens-1 .itens-wraper p{
     font-size: 20px;
     font-weight: 400;
-    line-height: 23px;
     color: rgba(29, 27, 25, 0.72);
 }
 
@@ -198,15 +218,34 @@ section.itens-1 .itens-wraper img{
 
 #item1{
     float: left;
-    margin-top: 71px;
+    padding-top: 40px;
 }
 
 #item2{
     float: right;
-    margin-top: 71px;
+    padding-top: 40px;
 }
 
 #item3{
     margin: 0 auto;
-    margin-top: 50px;
+    padding-top: 28px;
+}
+
+/* CHAMADA 2 */
+
+section.chamada > .container{
+    height: 100%;
+    max-height: 800px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+section.chamada .chamada-wraper{
+    width: 30%;
+    height: 100%;
+}
+
+.chamada-wraper .img img{
+    height: 400px;
 }
