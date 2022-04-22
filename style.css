@@ -23,7 +23,14 @@ html,body{
     src: url('./fonts/selna-7440006/Selna\ Regular.ttf');
 }
 
+/***/
+
 /* HEADER */
+
+header{
+    padding: 20px 2%;
+}
+
 /*menu 1*/
 header nav.menu1{
     float: left;
@@ -31,13 +38,11 @@ header nav.menu1{
 
 header nav.menu1 ul{
     list-style-type: none;
-    padding-top: 39px;
-    padding-left: 67px;
+    padding: 18px 0px;
 }
 
 header nav.menu1 ul li{
     float: right;
-    text-transform: uppercase;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 20px;
@@ -50,18 +55,13 @@ header nav.menu1 a{
 
 /*logo*/
 header .container .logo{
-    padding-top: 25px;
     text-align: center;
-    display: flex;
-    align-items: center;
 }
 
 header .container .logo h2{
     font-size: 52px;
     font-family: 'Selna';
-    text-transform: uppercase;
     font-weight: 400;
-    line-height: 90px;
     color: #1D1B19;
     margin: 0 auto;
 }
@@ -73,13 +73,11 @@ header nav.menu2{
 
 header nav.menu2 ul{
     list-style-type: none;
-    padding-top: 39px;
-    padding-right: 67px;
+    padding: 18PX 0PX;
 }
 
 header nav.menu2 ul li{
     float: left;
-    text-transform: uppercase;
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 20px;
@@ -91,28 +89,31 @@ header nav.menu2 a{
 }
 
 /* CONTEUDO */
+.conteudo{
+    height: 700px;
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
 /*img*/
 header .conteudo .img-conteudo{
     width: 50%;
     max-height: 800px;
     float: left;
+    padding: 0 2%;
 }
 
 header .conteudo .img-conteudo img{
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 100%;
 }
 
 /*text*/
 header .conteudo-wraper{
     float: right;
     width: 50%;
-    max-height: 800px;
     text-align: center;
-    padding-top: 20%;
-    text-transform: uppercase;
-    height: 100%;
-    min-height: 750px;
+    
 }
 
 header .conteudo-wraper img{
@@ -125,25 +126,19 @@ header .conteudo-wraper .texto-conteudo h2{
     font-family: 'Selna';
     font-size: 62px;
     font-weight: 400;
-    line-height: 80px;
     color: #1D1B19;
-}
-
-header .conteudo-wraper .texto-conteudo p{
-    font-family: 'Helvetica';
-    text-decoration: underline;
-    margin: 0 auto;
-    /*max-width: 100px;*/
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 21px;
-    margin-top: 38px;
-    color: #1D1B19;
-    /*border-bottom: 1px solid #1D1B19;*/
-    cursor: pointer;
 }
 
 /*loja*/
+main{
+    padding: 0 4%;
+}
+
+.container-itens1{
+    display: flex;
+    justify-content: space-around;
+}
+
 section.chamada .titulo-chamada{
     width: 100%;
     padding-left: 66px;
@@ -204,50 +199,14 @@ section.itens-1 .itens-wraper img{
 #item1{
     float: left;
     margin-top: 71px;
-    margin-left: 67px;
 }
 
 #item2{
     float: right;
     margin-top: 71px;
-    margin-right: 67px;
 }
 
 #item3{
     margin: 0 auto;
     margin-top: 50px;
-}
-
-/* CHAMADA */
-section.chamada2 img{
-    width: 100%;
-    position: relative;
-}
-
-#colar1{
-    margin-top: 142px;
-    margin-left: 66px;
-    width: 20%;
-}
-
-#colar2{
-    float: right;
-    top: -1000px;
-    margin-left: 111px;
-    margin-right: 66px;
-    width: 20%;
-}
-
-section.chamada2 .texto{
-    text-align: center;
-    position: relative;
-    top: -300px;
-}
-
-section.chamada2 .texto h2{
-    font-family: 'Selna';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 56.377px;
-    line-height: 96px;
 }
