@@ -33,11 +33,6 @@ header{
 
 
 /*search*/
-.top .search{
-    float: left;
-    position: relative;
-}
-
 .top .search img{
     height: 15px;
     width: auto;
@@ -57,24 +52,6 @@ input[type=text]::placeholder{
     color: rgb(167, 120, 96);
 }
 
-/*menu 1*/
-header nav.menu1 ul{
-    list-style-type: none;
-    padding: 18px 0px;
-}
-
-header nav.menu1 ul li{
-    float: right;
-    font-size: 16px;
-    font-family: Arial, Helvetica, sans-serif;
-    padding: 0 20px;
-}
-
-header nav.menu1 a{
-    text-decoration: none;
-    color: #1D1B19;
-}
-
 /*logo*/
 header .container .logo h2{
     font-size: 52px;
@@ -85,31 +62,41 @@ header .container .logo h2{
     margin: 0 auto;
 }
 
-/*menu 2*/
-header nav.menu2 ul{
+/*menu*/
+.menu{
+    display: flex;
+    align-items: center;
+}
+header nav.menu ul{
     list-style-type: none;
     padding: 18PX 0PX;
+    display: flex;
 }
 
-header nav.menu2 ul li{
-    float: left;
+header nav.menu ul li{
     font-size: 16px;
     font-family: Arial, Helvetica, sans-serif;
     padding: 0 20px;
 }
 
-header nav.menu2 a{
+header nav.menu a{
     text-decoration: none;
     color: #1D1B19;
 }
 
 .top{
-   height: 25vh;
-   display: flex;
-   justify-content: center;
-   align-items: center;
-   background-color: rgba(194, 153, 132, 0.781);
-}
+    height: 25vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: row;
+    background-color: rgba(194, 153, 132, 0.781);
+ }
+ 
+ .header-wraper{
+     width: 70%;
+     display: flex;
+ }
 
 /* CONTEUDO */
 .conteudo{
