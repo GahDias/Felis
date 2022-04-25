@@ -242,10 +242,9 @@ section.itens-1 .itens-wraper img{
 
 /* CHAMADA */
 section.chamada > .container{
-    padding: 0px 4%;
-    margin-top: -50px;
+    padding: 0px 4% 120px 4%;
+    margin-top: -100px;
     height: 100%;
-    max-height: 800px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -274,3 +273,46 @@ section.chamada .chamada-wraper .text-chamada h2{
 #img2{
     margin-top: 70vh;
 }
+
+/* ABOUT */
+section.about{
+    padding: 30px 4% 0px 4%;
+    border-top: 4px solid rgb(207, 175, 159);
+}
+
+section.about .text{
+    width: 50%;
+    float: left;
+    padding-top: 80px;
+}
+
+section.about .text h2{
+    font-size: 50px;
+    padding-bottom: 50px;
+    letter-spacing: 15px;
+    font-weight: 400;
+    font-family: 'Selna';
+    color: #1D1B19;
+}
+
+section.about .text p{
+    width: 90%;
+    font-size: 25px;
+    line-height: 35px;
+    font-weight: 400;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #1D1B19;
+}
+
+section.about .img-about{
+    width: 45%;
+    float: right;
+}
+
+section.about img{
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+}
+
+/**/
