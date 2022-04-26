@@ -18,10 +18,6 @@ html,body{
     margin: 0 auto;
 }
 
-@font-face {
-    font-family: 'Selna';
-    src: url('./fonts/selna-7440006/Selna\ Regular.ttf');
-}
 
 /***/
 
@@ -56,7 +52,6 @@ input[type=text]::placeholder{
 header .container .logo h2{
     font-size: 52px;
     padding: 0 50px;
-    font-family: 'Selna';
     font-weight: 400;
     color: #1D1B19;
     margin: 0 auto;
@@ -134,7 +129,6 @@ header .conteudo-wraper img{
 }
 
 header .conteudo-wraper .texto-conteudo h2{
-    font-family: 'Selna';
     font-size: 62px;
     font-weight: 400;
     color: #1D1B19;
@@ -160,7 +154,6 @@ section.favoritos .titulo-chamada{
 
 section.favoritos .titulo-chamada h2{
     float: left;
-    font-family: 'Selna';
     font-size: 50px;
     font-weight: 400;
     color: #1D1B19;
@@ -265,7 +258,6 @@ section.chamada .chamada-wraper .text-chamada h2{
     margin-top: 35vh;
     text-align: center;
     font-weight: 400;
-    font-family: 'Selna';
     float: left;
     padding-left: 10px;
 }
@@ -276,8 +268,9 @@ section.chamada .chamada-wraper .text-chamada h2{
 
 /* ABOUT */
 section.about{
-    padding: 30px 4% 0px 4%;
+    padding: 30px 4% 630px 4%;
     border-top: 4px solid rgb(207, 175, 159);
+    border-bottom: 4px solid rgb(207, 175, 159);
 }
 
 section.about .text{
@@ -289,15 +282,14 @@ section.about .text{
 section.about .text h2{
     font-size: 50px;
     padding-bottom: 50px;
-    letter-spacing: 15px;
+    letter-spacing: 10px;
     font-weight: 400;
-    font-family: 'Selna';
     color: #1D1B19;
 }
 
 section.about .text p{
     width: 90%;
-    font-size: 25px;
+    font-size: 20px;
     line-height: 35px;
     font-weight: 400;
     font-family: Arial, Helvetica, sans-serif;
@@ -315,4 +307,133 @@ section.about img{
     border-top-right-radius: 50%;
 }
 
-/**/
+/* SUBSCRIBE */
+section.sub{
+    padding: 150px 4% 0px 4%;
+}
+
+section.sub .container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+section.sub .img-sub{
+    display: flex;
+    justify-content: center;
+    padding-bottom: 20px;
+}
+
+section.sub .img-sub img{
+   width: 48px;
+   height: auto;
+}
+
+section.sub .title h2{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: 5px;
+}
+
+/*form*/
+form{
+    padding: 250px 4% 0px 4%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+form .input-email{
+    width: 40%;
+}
+
+form .input-email input[type=email]{
+    width: 100%;
+    border: none;
+    padding: 5px 8px;
+    border-bottom: 1px solid #000;
+    outline: none;
+}
+form .input-submit{
+    width: 15%;
+}
+form .input-submit input[type=submit]{
+    width: 100%;
+    padding: 5px 0px;
+    border: none;
+    border-bottom: 1px solid #000;
+    background-color: white;
+    cursor: pointer;
+    transition: 1s;
+}
+
+form .input-submit input[type=submit]:hover{
+    background-color: rgb(250, 229, 219);
+}
+
+/* MIDIA */
+
+section.midia{
+    padding: 200px 4% 0px 4%;
+}
+
+.midia-title{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.midia-title img{
+    padding: 0px 30px 0px 30px;
+}
+
+.midia-title h2{
+    font-size: 50px;
+    font-weight: 400;
+    line-height: 85px;
+    letter-spacing: 5px;
+}
+
+/*pics*/
+.midia-pics{
+    display: flex;
+    justify-content: space-around;
+    padding-top: 50px;
+}
+
+.midia-pics img{
+    width: 95%;
+}
+
+/* FOOTER */
+footer{
+    margin-top: 70px;
+    padding: 30px 0px 30px 0px;
+    background-color: rgba(194, 153, 132, 0.781);
+}
+
+footer .logo{
+    float: left;
+    font-size: 35px;
+    font-weight: 400;
+    color: white;
+    padding-left: 60px;
+}
+
+.list{
+    float: right;
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.list li{
+    list-style-type: none;
+}
+
+.list a{
+    color: #1D1B19;
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 20px;
+}
