@@ -495,6 +495,39 @@ footer .logo{
         position: relative;
     }
 
+    section.itens-1{
+        width: 90%;
+        display: block;
+    }
+
+    .container-itens1{
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .box{
+        width: 110%;
+        height: 200px;
+        margin-top: -170px;
+        border-top-right-radius: 100px;
+        border-bottom-right-radius: 100px;
+    }
+
+    section.itens-1 .itens-wraper{
+        width: 100%;
+    }
+    
+    section.itens-1 .info-loja{
+        padding: 50px;
+    }
+    
+    section.itens-1 .itens-wraper img{
+        width: 70%;
+        position: relative;
+        z-index: 999;
+    }
+    
 }
 
 @media screen  and (max-width: 610px){
@@ -537,6 +570,53 @@ footer .logo{
 
     header .conteudo-wraper{
         width: 94%;
+    }
+
+    section.favoritos{
+        padding-top: 50px;
+        justify-self: center;
+    }
+
+    section.favoritos p{
+        display: none;
+    }
+
+
+    section.itens-1{
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container-itens1{
+        width: 100%;
+    }
+    
+    .box{
+        width: calc(100% + 30px);
+        height: 130px;
+        margin-top: -70px;
+        border-top-right-radius: 0px;
+        border-bottom-right-radius: 0px;
+    }
+    
+    section.itens-1 .info-loja{
+        padding: 0px;
+        margin-top: 90px;
+        margin-left: 80px;
+        display: flex;
+        float: none;
+        position: absolute;
+    }
+
+    section.itens-1 .info-loja h2{
+        padding-right: 50px;
+    }
+    
+    section.itens-1 .itens-wraper img{
+        width: 100%;
+        position: relative;
+        z-index: 999;
     }
 
 }
