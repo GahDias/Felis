@@ -51,21 +51,35 @@ input[type=text]::placeholder{
 /*logo*/
 header .container .logo h2{
     font-size: 52px;
-    padding: 0 50px;
     font-weight: 400;
     color: #1D1B19;
     margin: 0 auto;
 }
+
+header .logo{
+    grid-area: logo;
+}
+
 
 /*menu*/
 .menu{
     display: flex;
     align-items: center;
 }
+
+.m1{
+    grid-area: m1;
+} 
+
+.m2{
+    grid-area: m2;
+}
+
 header nav.menu ul{
     list-style-type: none;
-    padding: 18PX 0PX;
+    margin: 1%;
     display: flex;
+    white-space: nowrap;
 }
 
 header nav.menu ul li{
@@ -80,7 +94,8 @@ header nav.menu a{
 }
 
 .top{
-    height: 25vh;
+    /*height: 25vh;*/
+    padding: 3rem;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -90,7 +105,8 @@ header nav.menu a{
  
  .header-wraper{
      width: 70%;
-     display: flex;
+     display: grid;
+     grid-template-areas: "m1 logo m2";
  }
 
 /* CONTEUDO */
@@ -102,16 +118,14 @@ header nav.menu a{
 }
 /*img*/
 header .conteudo .img-conteudo{
-    width: 50%;
+    width: 50vw;
     max-height: 800px;
     float: left;
     padding: 0 2%;
-    margin-top: -20px;
 }
 
 header .conteudo .img-conteudo img{
     width: auto;
-    height: 100%;
 }
 
 /*text*/
@@ -137,6 +151,8 @@ header .conteudo-wraper .texto-conteudo h2{
 /*loja*/
 main{
     padding: 0 4%;
+    margin: 0 auto;
+    max-width: 1400px;
 }
 
 section.favoritos{
@@ -177,8 +193,8 @@ section.favoritos .titulo-chamada a{
     position: relative;
     margin-top: -100px;
     margin-left: -15px;
-    width: 110%;
-    height: 120px;
+    width: 130%;
+    height: 110px;
     position: relative;
     z-index: 1;
 }
@@ -190,11 +206,10 @@ section.itens-1 .itens-wraper{
 }
 
 section.itens-1 .info-loja{
-    position: absolute;
+    padding: 15px;
     display: block;
-    margin-top: -100px;
     z-index: 999;
-    margin-left: 300px;
+    float: right;
 }
 
 section.itens-1 .itens-wraper h2{
@@ -436,4 +451,92 @@ footer .logo{
     text-decoration: none;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 20px;
+}
+
+@media screen and (max-width: 900px){
+    header .search{
+        display: none;
+    }
+
+    .header-wraper{
+        width: 100%;
+        justify-content: center;
+    }
+
+    .conteudo{
+        display:flex;
+        justify-content: center;
+    }
+
+    header .conteudo .img-conteudo{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    header .conteudo .img-conteudo img{
+        width: 80%;
+        max-width: 600px;
+    }
+
+    header .conteudo-wraper{
+        float: none;
+        width: 90%;
+        text-align: center;
+        background-color: rgba(194, 153, 132, 0.295);
+        position: absolute;
+    }
+    
+    header .conteudo-wraper img{
+        position: relative;
+    }
+
+    header .conteudo-wraper h2{
+        position: relative;
+    }
+
+}
+
+@media screen  and (max-width: 610px){
+    .top{
+        padding: 1.5rem;
+    }
+
+    .header-wraper{
+        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-areas: ". logo logo ."
+                                ". m1 m2 .";
+    }
+
+    .m1, .m2{
+        grid-row: 2/3;
+    }
+
+    .logo{
+        grid-row: 1/2;
+        justify-self: center;
+    }
+
+    .m1{
+        grid-column: 2;
+    }
+
+    .m2{
+        grid-column: 3;
+    }
+
+    header .conteudo .img-conteudo{
+        width: 100%;
+        padding: 0;
+    }
+
+    header .conteudo .img-conteudo img{
+        width: 90%;
+    }
+
+    header .conteudo-wraper{
+        width: 94%;
+    }
+
 }
